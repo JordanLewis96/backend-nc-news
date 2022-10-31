@@ -36,6 +36,7 @@ app.get("/api/users", getUsers);
 app.all("/api/*", (request, response, next) => {
   response.status(400).send({ msg: "cannot find id - bad request" });
 });
+
 app.use((error, request, response, next) => {
   const { status, msg } = error;
   if (error.status) {
