@@ -1,0 +1,1 @@
+You will need to create two .env files: .env.test and .env.development. Into each, add PGDATABASE=nc_news into .env.development and PGDATABASE=nc_news_test into .env.test - Double check that these .env files are .gitignored.
